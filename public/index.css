@@ -1,0 +1,72 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --main-color: rgb(29, 29, 29);
+  
+  --opposite-color: rgb(245, 245, 245);
+
+  --special-color: rgb(20, 12, 94);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Garamond, serif;
+  font-size: 1rem;
+
+  background-color: var(--opposite-color);
+  color: var(--main-color);
+}
+
+a {
+  color: var(--special-color);
+}
+
+body > aside {
+  padding: 1rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  display: inline-block;
+  width: auto;
+}
+
+@media (max-width: 769px) {
+  body > aside {
+    display: block;
+    padding-right: 1rem;
+    text-align: center;
+  }
+}
+
+body > aside img {
+  height: 100%;
+  max-height: calc(100vh - 2rem);
+  max-width: 45vw;
+}
+
+@media (max-width: 769px) {
+  body > aside img {
+    height: unset;
+    max-height: unset;
+    max-width: 60vw;
+  }
+}
+
+body > main {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+  padding: 1rem;
+}
+
+@media (max-width: 769px) {
+  body > main {
+    display: block;
+    padding-top: 0rem
+  }
+}
