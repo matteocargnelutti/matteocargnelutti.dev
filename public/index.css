@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 :root {
@@ -13,24 +14,33 @@
   --opposite-color-: rgb(225, 225, 225);
   --opposite-color--: rgb(205, 205, 205);
 
-  --special-color: rgb(20, 12, 94);
-  --special-color-: rgb(10, 6, 47);
+  --special-color: #950e58;
+  --special-color-: rgb(85, 9, 50);
 }
 
 html {
-  font-size: 20px;
-  font-size: clamp(18px, 1.35vmax, 32px);
+  font-size: 16px;
+  font-size: clamp(16px, 1.15vmax, 28px);
+  font-family: Courier, monospace;
+}
+
+* {
+  letter-spacing: -0.05rem;
 }
 
 body {
-  font-family: Garamond, serif;
   font-size: 1rem;
-
-  background-color: var(--main-color);
-  color: var(--main-color);
-
-  padding: 0.5rem;
+  background-color: var(--special-color);
+  min-height: 100vh;
+  padding-left: 2rem;
 }
+
+@media (max-width: 769px) {
+  body {
+    padding-left: 1rem;
+  }
+}
+
 
 a {
   color: var(--special-color);
@@ -42,24 +52,17 @@ a:hover {
 }
 
 body > main {
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--opposite-color);
+  min-height: 100vh;
 }
 
 @media (max-width: 769px) {
   body > main {
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 }
 
-body > main > img:first-of-type {
-  display: block;
-  margin: auto;
-  margin-bottom: 1rem;
-  max-width: 60vw;
-  max-height: 62.5vh;
-}
 
 body > main h1, h2, h3 {
   font-weight: normal;
@@ -68,30 +71,44 @@ body > main h1, h2, h3 {
 
 body > main h1 {
   font-size: 2.85rem;
-  letter-spacing: -0.1rem;
-  text-align: center;
+  letter-spacing: -0.25rem;
+  vertical-align: middle;
+}
+
+body > main h1 span {
+  vertical-align: middle;
+}
+
+body > main h1 img {
+  height: 3rem;
+  vertical-align: middle;
 }
 
 @media (max-width: 769px) {
   body > main h1 {
     font-size: 2.45rem;
   }
+
+  body > main h1 span {
+    display: block;
+  }
 }
 
 body > main h2 {
   font-size: 1.85rem;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.1rem;
+  border-top: 1px solid var(--opposite-color--);
+  padding-top: 0.5rem;
 }
 
 @media (max-width: 769px) {
   body > main h2 {
-    font-size: 1.55rem;
+    padding-top: 1rem;
   }
 }
 
 body > main section {
   max-width: 82.5ch;
-  margin: auto;
   margin-top: 1rem;
 }
 
