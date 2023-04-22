@@ -20,7 +20,7 @@
 
 html {
   font-size: 16px;
-  font-size: clamp(16px, 1.15vmax, 28px);
+  font-size: clamp(16px, 1.125vmax, 28px);
   font-family: Courier, monospace;
 }
 
@@ -113,8 +113,9 @@ body > main section {
 }
 
 body > main p {
-  line-height: 1.45rem;
+  line-height: 1.55rem;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 body > main ul {
