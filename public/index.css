@@ -24,16 +24,6 @@ html {
   font-family: Courier, monospace;
 }
 
-@media (max-width: 421px) {
-  html {
-    font-size: 17px;
-  }
-
-  * {
-    font-weight: bold;
-  }
-}
-
 * {
   letter-spacing: -0.05rem;
 }
