@@ -26,6 +26,10 @@ html {
 
 @media (max-width: 421px) {
   html {
+    font-size: 17px;
+  }
+
+  * {
     font-weight: bold;
   }
 }
