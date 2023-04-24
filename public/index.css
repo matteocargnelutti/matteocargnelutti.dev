@@ -21,8 +21,7 @@
 html {
   font-size: 16px;
   font-size: clamp(16px, 1.125vmax, 28px);
-  font-family: "Courier", "Courier New", monospace;
-  background-color: var(--opposite-color);
+  font-family: Courier, monospace;
 }
 
 @media (max-width: 421px) {
@@ -43,12 +42,13 @@ body {
   padding-left: 2rem;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 421px) {
   body {
-    padding-left: 0.5rem;
+    padding-left: unset;
+    border-top: 1rem solid var(--special-color);
+    border-bottom: 1rem solid var(--special-color);
   }
 }
-
 
 a {
   color: var(--special-color);
@@ -65,16 +65,15 @@ body > main {
   min-height: 100vh;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 421px) {
   body > main {
     padding: 1rem;
   }
 }
 
-
 body > main h1, h2, h3 {
   font-weight: normal;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 body > main h1 {
@@ -88,17 +87,18 @@ body > main h1 span {
 }
 
 body > main h1 img {
-  height: 3rem;
+  height: 2.75rem;
   vertical-align: middle;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 421px) {
   body > main h1 {
-    font-size: 2.45rem;
+    font-size: 2.35rem;
   }
 
   body > main h1 span {
     display: block;
+    margin-top: 0.5rem;
   }
 }
 
@@ -106,10 +106,10 @@ body > main h2 {
   font-size: 1.85rem;
   letter-spacing: -0.1rem;
   border-top: 1px solid var(--opposite-color--);
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 421px) {
   body > main h2 {
     padding-top: 1rem;
   }
@@ -139,4 +139,11 @@ body > main ul.flat li {
 body > main ul li {
   margin-bottom: 0.5rem;
   line-height: 1.45rem;
+}
+
+@media (max-width: 421px) {
+  body > main ul:not(.flat) li a {
+    text-decoration: none;
+    /*font-weight: bold;*/
+  }
 }
