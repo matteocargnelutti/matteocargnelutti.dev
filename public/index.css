@@ -144,6 +144,7 @@ body > main ul li {
 @media (max-width: 421px) {
   body > main ul:not(.flat) li a {
     text-decoration: none;
+    font-size: 1.25rem;
     /*font-weight: bold;*/
   }
 }
