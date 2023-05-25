@@ -146,4 +146,9 @@ body > main ul li {
     text-decoration: none;
     font-weight: bold;
   }
+
+  body > main ul li {
+    margin-bottom: 1rem;
+    line-height: 1.45rem;
+  }
 }
