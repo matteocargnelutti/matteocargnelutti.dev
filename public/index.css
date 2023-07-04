@@ -20,7 +20,7 @@
 
 html {
   font-size: 16px;
-  font-size: clamp(16px, 1.115vmax, 26px);
+  font-size: clamp(16px, 1.20vmax, 26px);
   font-family: Courier, monospace;
 }
 
