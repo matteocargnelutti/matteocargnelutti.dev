@@ -1,0 +1,153 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(29, 29, 29);
+  --main-color-: rgb(57, 57, 57);
+  --main-color--: rgb(70, 70, 70);
+  --main-color---: rgb(100, 100, 100);
+  
+  --opposite-color: rgb(245, 245, 245);
+  --opposite-color-: rgb(225, 225, 225);
+  --opposite-color--: rgb(205, 205, 205);
+
+  --special-color: #950e58;
+  --special-color-: rgb(85, 9, 50);
+}
+
+html {
+  font-size: 18px;
+  font-size: clamp(18px, 1.20vmax, 26px);
+  font-family: Garamond, serif;
+  color: var(--main-color);
+}
+
+@media (max-width: 421px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+* {
+  letter-spacing: -0.005rem;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--opposite-color);
+  min-height: 100vh;
+  padding-left: 2rem;
+}
+
+@media (max-width: 421px) {
+  body {
+    padding-left: unset;
+  }
+}
+
+a {
+  color: var(--special-color);
+}
+
+a:hover {
+  color: var(--special-color-);
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 769px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+body > main {
+  padding: 2rem;
+  padding-top: 4rem;
+  min-height: 100vh;
+  max-width: 75ch;
+}
+
+@media (max-width: 421px) {
+  body > main {
+    padding-top: 3rem;
+  }
+}
+
+body > main h1 {
+  font-size: 2.85rem;
+  letter-spacing: -0.075rem;
+  vertical-align: middle;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 421px) {
+  body > main h1 {
+    font-size: 2.35rem;
+    margin-bottom: 3rem;
+  }
+}
+
+body > main h1 em {
+  color: var(--special-color);
+}
+
+body > main section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--opposite-color--);
+}
+
+body > main section:last-of-type {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+body > main section h2 {
+  font-size: 1.85rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 421px) {
+  body > main section h2 {
+    font-size: 1.65rem;
+  }
+}
+
+body > main section p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+body > main section p:last-of-type {
+  margin-bottom: 0rem;
+}
+
+body > main section ul {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+body > main section ul li {
+  margin-bottom: 1rem;
+}
+
+body > main section ul.flat li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 421px) {
+  body > main section ul.flat li {
+    display: block;
+  }
+}
