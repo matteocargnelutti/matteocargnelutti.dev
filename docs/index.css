@@ -105,6 +105,13 @@ body > main section {
   border-bottom: 1px solid var(--opposite-color--);
 }
 
+body > main hr {
+  border: 0px;
+  border-bottom: 1px solid var(--opposite-color--);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 body > main section:last-of-type {
   border-bottom: 0px;
   margin-bottom: 0px;
