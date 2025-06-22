@@ -72,7 +72,7 @@ body > main {
   padding: 2rem;
   padding-top: 4rem;
   min-height: 100vh;
-  max-width: 75ch;
+  max-width: 80ch;
 }
 
 @media (max-width: 421px) {
